@@ -3,14 +3,8 @@ from tkinter import messagebox
 import tkinter.simpledialog as simpledialog
 
 def zadanie_1():
-    ram = simpledialog.askinteger("Zadanie 1", "Podaj wartość ram dla którego chcesz określić liczbę par SEGMENT:OFFSET")
-    if ram is not None:
-        pary = (ram // 16) + 1
-        messagebox.showinfo("Wynik", f"Liczba tych par to: {pary}")
-
-def zadanie_2():
-    num1 = simpledialog.askinteger("Zadanie 2", "Podaj pierwszą liczbę (0-255)", minvalue=0, maxvalue=255)
-    num2 = simpledialog.askinteger("Zadanie 2", "Podaj drugą liczbę (0-255)", minvalue=0, maxvalue=255)
+    num1 = simpledialog.askinteger("Zadanie 1", "Podaj pierwszą liczbę (0-255)", minvalue=0, maxvalue=255)
+    num2 = simpledialog.askinteger("Zadanie 1", "Podaj drugą liczbę (0-255)", minvalue=0, maxvalue=255)
     
     if num1 is not None and num2 is not None:
         bin_num1 = format(num1, '08b')
@@ -19,17 +13,24 @@ def zadanie_2():
         result = num1 + num2
         bin_result = format(result, '09b')
         
-        carryFlag = (result > 255)
+        carryFlag = int(result > 255)
         
         messagebox.showinfo("Wynik", f"Pierwsza liczba w binarnym: {bin_num1}\nDruga liczba w binarnym: {bin_num2}\nWynik dodawania w binarnym: {bin_result}\nFlaga przeniesienia (CF): {carryFlag}")
 
-def zadanie_3():
-    ax = simpledialog.askinteger("Zadanie 3", "Podaj wartość rejestru AX")
-    bx = simpledialog.askinteger("Zadanie 3", "Podaj wartość rejestru BX")
+def zadanie_2():
+    ax = simpledialog.askinteger("Zadanie 2", "Podaj wartość rejestru AX")
+    bx = simpledialog.askinteger("Zadanie 2", "Podaj wartość rejestru BX")
     
     if ax is not None and bx is not None:
         result = 1 if ax < bx else 0
         messagebox.showinfo("Wynik", f"Wartość tego rejestru to: {result}")
+
+def zadanie_3():
+    ram = simpledialog.askinteger("Zadanie 3", "Podaj wartość ram dla którego chcesz określić liczbę par SEGMENT:OFFSET")
+    if ram is not None:
+        pary = (ram // 16) + 1
+        messagebox.showinfo("Wynik", f"Liczba tych par to: {pary}")
+
 
 def zadanie_4():
     wiersz = simpledialog.askinteger("Zadanie 4", "Podaj indeks wiersza")
