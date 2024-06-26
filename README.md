@@ -1,6 +1,6 @@
 # Aplikacja Pomagająca w Rozwiązywaniu Zadań z ARCHI
 
-To repozytorium zawiera aplikację napisaną w Pythonie z użyciem Tkinter, która pomaga w rozwiązywaniu ARCHI. Aplikacja oferuje interaktywny interfejs graficzny, który umożliwia łatwe wprowadzanie danych i obliczanie wyników dla różnych typów zadań.
+To repozytorium zawiera aplikację napisaną w Pythonie, która pomaga w rozwiązywaniu ARCHI. Aplikacja oferuje interaktywny interfejs graficzny, który umożliwia łatwe wprowadzanie danych i obliczanie wyników dla różnych typów zadań.
 
 ## Funkcje Aplikacji
 
