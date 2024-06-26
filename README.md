@@ -1,6 +1,6 @@
 # Aplikacja Pomagająca w Rozwiązywaniu Zadań na Kolokwium z Przedmiotu ARCHI
 
-To repozytorium zawiera aplikację napisaną w Pythonie z użyciem Tkinter, która pomaga w rozwiązywaniu zadań na kolokwium z przedmiotu ARCHI. Aplikacja oferuje interaktywny interfejs graficzny, który umożliwia użytkownikom łatwe wprowadzanie danych i obliczanie wyników dla różnych typów zadań.
+To repozytorium zawiera aplikację napisaną w Pythonie z użyciem Tkinter, która pomaga w rozwiązywaniu ARCHI. Aplikacja oferuje interaktywny interfejs graficzny, który umożliwia łatwe wprowadzanie danych i obliczanie wyników dla różnych typów zadań.
 
 ## Funkcje Aplikacji
 
@@ -14,19 +14,41 @@ To repozytorium zawiera aplikację napisaną w Pythonie z użyciem Tkinter, któ
 
 - Python 3.x
 - Tkinter (zazwyczaj zainstalowany domyślnie z Pythonem)
-- ffmpeg (jeśli chcesz konwertować pliki wideo, choć nie jest to część tego konkretnego programu)
 
 ## Instalacja
 
 1. **Sklonuj to repozytorium:**
     ```sh
-    git clone https://github.com/twoje-nazwa-uzytkownika/archi-helper.git
-    cd archi-helper
+    git clone https://github.com/aradinjp/Kolos-ARCHI.git ./kolos-archi-help
+    cd kolos-archi-help
     ```
 
 2. **Zainstaluj wymagane pakiety (jeśli to konieczne):**
-    Jeśli nie masz Tkinter, możesz zainstalować go za pomocą menedżera pakietów odpowiedniego dla twojego systemu operacyjnego.
 
+    ### Instalacja Tkinter:
+
+    Tkinter jest zazwyczaj domyślnie zainstalowany z Pythonem, ale jeśli go nie masz, możesz go zainstalować w zależności od twojego systemu operacyjnego:
+
+    **Windows:**
+    Tkinter powinien być zainstalowany domyślnie. Jeśli nie, możesz zainstalować go poprzez instalację najnowszej wersji Pythona z [python.org](https://www.python.org/downloads/).
+
+    **macOS:**
+    Użyj Homebrew, aby zainstalować Tkinter:
+    ```sh
+    brew install python-tk
+    ```
+
+    **Linux (Debian/Ubuntu):**
+    Możesz zainstalować Tkinter za pomocą apt:
+    ```sh
+    sudo apt-get install python3-tk
+    ```
+
+    **Linux (Fedora):**
+    Możesz zainstalować Tkinter za pomocą dnf:
+    ```sh
+    sudo dnf install python3-tkinter
+    ```
 3. **Uruchom aplikację:**
     ```sh
     python main.py
@@ -39,10 +61,6 @@ To repozytorium zawiera aplikację napisaną w Pythonie z użyciem Tkinter, któ
 3. Wprowadź wymagane dane w odpowiednich polach tekstowych.
 4. Kliknij przycisk "Oblicz" obok zadania, aby uzyskać wynik.
 5. Użyj przycisku "Reset", aby wyczyścić wszystkie pola i wyniki.
-
-## Przykład
-
-![Example Screenshot](screenshot.png)
 
 ## Wsparcie
 
